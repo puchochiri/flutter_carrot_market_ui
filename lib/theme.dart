@@ -9,7 +9,7 @@ TextTheme textTheme() {
     bodyLarge: GoogleFonts.openSans(fontSize: 16.0, color: Colors.black),
     bodyMedium: GoogleFonts.openSans(fontSize: 14.0, color: Colors.grey),
     titleMedium: GoogleFonts.openSans(fontSize: 15.0, color: Colors.black),
-    headline6:
+
   );
 }
 
@@ -19,18 +19,20 @@ AppBarTheme appBarTheme() {
     color: Colors.white,
     elevation: 0.0,
       titleTextStyle : TextStyle(
-        fontStyle: FontStyle.
+        fontSize: 16,
         fontWeight: FontWeight.bold,
         color: Colors.black,
 
-
-      //   titleTextStyle: TextStyle(
-      //   fontFamily: 'OpenSans',
-      //   fontSize: 20,
-      //   fontWeight: FontWeight.bold,
-      // ),
-
-
     )
-  )
+  );
+}
+
+ThemeData theme() {
+  return ThemeData(
+    scaffoldBackgroundColor: Colors.white,
+    textTheme: textTheme(),
+    appBarTheme: appBarTheme(),
+    primaryColor: Colors.orange,
+
+  );
 }
