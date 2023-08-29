@@ -4,8 +4,17 @@ class NeighborhoodLifeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('neighborhoodLifeScreen'),
+    return Container(
+      color: Colors.redAccent[100],
+      child: Center(
+        child: Text(
+            'neighborhoodLifeScreen',
+            style: TextStyle(
+              fontSize: 20,
+              color: Colors.black
+            ),
+        ),
+      ),
     );
   }
 }
