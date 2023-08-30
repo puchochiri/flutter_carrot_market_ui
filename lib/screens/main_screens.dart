@@ -14,7 +14,7 @@ class MainScreens extends StatefulWidget {
 
 class _MainScreensState extends State<MainScreens> {
   // index값 선언
-  int _selectedIndex = 0;
+  int _selectedIndex = 3;
   @override
   Widget build(BuildContext context) {
     //Scaffold 틀 리턴
